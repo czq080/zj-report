@@ -3,7 +3,7 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body style="margin:auto;">
+<body style="width: 793.33px;">
 <div style="margin: 65px 83px 50px 86px">
     <div class="container top-container">
         <div class="title-container">
@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="container information-container">
-        <div>
+        <div class="information-title-container">
             <span class="information-title">个人信息</span>
         </div>
         <div class="information-table-container">
@@ -52,13 +52,25 @@
         </div>
     </div>
     <div class="container information-container">
-        <div>
+        <div class="information-title-container">
             <span class="information-title">检测结果</span>
         </div>
         <div class="result-container">
-            <div class="foot-type-img">
-                <div class="foot-type-span">脚型类型：<span style="margin-left: 10px;">sdada</span></div>
-                <div style="display: inline-flex;"><div style="flex: 1 1 auto;">123</div><div style="flex: 1 1 auto;">321</div></div>
+            <div class="foot-type-container">
+                <div class="foot-type-inner">
+                    <div class="foot-type">
+                        <span class="foot-type-span">脚型类型：</span>
+                        <span class="foot-type-name-span">${foot.type}</span>
+                    </div>
+                    <div class="foot-type-img-container">
+                        <div class="foot-type-img-container-left">
+                            <img src="./img/0.jpg" class="foot-type-img" />
+                        </div>
+                        <div class="foot-type-img-container-right">
+                            <img src="./img/1.jpg" class="foot-type-img" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
