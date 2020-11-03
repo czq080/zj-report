@@ -185,8 +185,6 @@
 .foot-report-title-span {
     font-size: 17px;
     font-weight: bold;
-    font-family: "NCIULE+SimSun";
-    color: #009999;
 }
 
 .foot-report-img-inner {
@@ -203,7 +201,68 @@
 
 .foot-report-img-desc-container {
     font-size: 14px;
+    margin-top: 10px;
+}
+
+.xiema{
+    font-size: 13px;
+    display: block;
+}
+
+.foot-report-font {
     font-family: "NCIULE+SimSun";
     color: #009999;
-    margin-top: 10px;
+}
+
+.foot-report-img-center{
+    float: left;
+    width: 100%;
+}
+
+.foot-report-img-center .inner{
+    margin-top:30px
+}
+
+.foot-report-img-left{
+    font-size: 20px;
+    float: left;
+    margin-left: -100%;
+}
+
+.foot-report-img-left .inner{
+    margin-left:8px;
+}
+
+.foot-report-img-left div{
+    line-height: 2em;
+}
+
+.foot-report-img-left span{
+    display: block;
+    font-size: 12px;
+    line-height: 2em;
+}
+
+.foot-report-img-right{
+    font-size: 20px;
+    float: left;
+    margin-left: -40px;
+}
+
+.foot-report-img-right .inner{
+    margin-left:-8px;
+}
+
+.foot-report-img-right div{
+    line-height: 2em;
+}
+
+.foot-report-img-right span{
+    display: block;
+    font-size: 12px;
+    line-height: 2em;
+}
+
+.zugonggao span{
+    font-size: 14px;
 }
