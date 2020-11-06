@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "VBVQIW+SimSun";
+    src: url("../fonts/30fde94d-0000-0000-0000-000000000000.woff") format("woff");
+}
+
+.report_three{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.pod {
+    display: flex;
+    margin-top: 10px;
+}
+
+.pod_container {
+    border: 2px solid #9cbad4;
+    flex: 1;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.pod .title {
+    width: 100%;
+    background-color: #cedcea;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pod .pod_table_container {
+    padding: 2px;
+    flex: 1;
+}
+
+.pod .pod_table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    font-size: 0.75em;
+    font-family: "VBVQIW+SimSun", "Times New Roman";
+    color: #009999;
+    line-height: 20px;
+    table-layout: fixed;
+}
+
+.pod .pod_table td {
+    border: 1px solid #ececec;
+    height: 43px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
