@@ -122,6 +122,68 @@
     box-shadow: 2px 3px 0px #2d4e6a;
 }
 
+/* 共有属性 */
+.right .down .content {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+    margin-bottom: 13px;
+}
+
+.right .down .border {
+    border: 3px solid #b7d2ec;
+}
+
+.right .down .title {
+    text-align: center;
+    margin: 12px;
+}
+
+.right .down .rightCtner {
+    margin-right: 5px;
+    width: 50%;
+}
+
+.right .down .leftCtner {
+    margin-left: 5px;
+    width: 48%;
+}
+
+.right .down {
+    display: flex;
+    margin-top: 20px;
+}
+
+.right .up .rightCtner div {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    line-height: 34px;
+    flex: 1;
+}
+
+.right .up .rightCtner {
+    display: flex;
+    border: 3px solid #bed7ef;
+    border-radius: 20px;
+    flex: 1 auto;
+    text-align: center;
+    margin-top: 9px;
+    margin-right: 8px;
+}
+
+.right .up .leftCtner span {
+    font-weight: bolder;
+    display: block;
+    color: #ffffff;
+}
+
+.right .up {
+    display: flex;
+}
+
+
+/* 一栏 */
+
 .top .left .mj {
     text-align: center;
     display: flex;
@@ -146,11 +208,6 @@
     position: absolute;
 }
 
-/* .top .left .mj img{
-    width: 165px;
-    height: 175px
-} */
-
 .top .left .mj-report {
     text-align: center;
     display: flex;
@@ -159,14 +216,7 @@
 
 .top .left .mj-report div {
     flex: 1;
-}
-
-.top .left .mj-report div {
     line-height: 28px;
-}
-
-.top .right .up {
-    display: flex;
 }
 
 .top .right .up .leftCtner {
@@ -174,63 +224,6 @@
     margin-bottom: 33px;
     margin-left: 16px;
     margin-right: 16px;
-}
-
-.top .right .up .leftCtner span {
-    font-weight: bolder;
-    display: block;
-    color: #ffffff;
-}
-
-.top .right .up .rightCtner {
-    display: flex;
-    border: 3px solid #bed7ef;
-    border-radius: 20px;
-    flex: 1 auto;
-    text-align: center;
-    margin-top: 9px;
-    margin-right: 8px;
-}
-
-.top .right .up .rightCtner div {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    flex: 1;
-}
-
-.top .right .up .rightCtner div {
-    line-height: 34px;
-}
-
-.top .right .down {
-    display: flex;
-    margin-top: 20px;
-}
-
-.top .right .down .leftCtner {
-    margin-left: 5px;
-    width: 48%;
-}
-
-.top .right .down .rightCtner {
-    margin-right: 5px;
-    width: 50%;
-}
-
-.top .right .down .title {
-    text-align: center;
-    margin: 12px;
-}
-
-.top .right .down .border {
-    border: 3px solid #b7d2ec;
-}
-
-.top .right .down .content {
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 20px;
-    margin-bottom: 13px;
 }
 
 /* 二栏 */
@@ -270,23 +263,13 @@
     margin-left: 6px;
     margin-right: 6px;
     position: relative;
-}
-
-.center .left .hg-report {
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
 .center .left .hg-report div {
     flex: 1;
-}
-
-.center .left .hg-report div {
     line-height: 28px;
-}
-
-.center .right .up {
-    display: flex;
 }
 
 .center .right .up .leftCtner {
@@ -294,63 +277,6 @@
     margin-bottom: 60px;
     margin-left: 16px;
     margin-right: 16px;
-}
-
-.center .right .up .leftCtner span {
-    font-weight: bolder;
-    display: block;
-    color: #ffffff;
-}
-
-.center .right .up .rightCtner {
-    display: flex;
-    border: 3px solid #bed7ef;
-    border-radius: 20px;
-    flex: 1 auto;
-    text-align: center;
-    margin-top: 9px;
-    margin-right: 8px;
-}
-
-.center .right .up .rightCtner div {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    flex: 1;
-}
-
-.center .right .up .rightCtner div {
-    line-height: 34px;
-}
-
-.center .right .down {
-    display: flex;
-    margin-top: 20px;
-}
-
-.center .right .down .leftCtner {
-    margin-left: 5px;
-    width: 48%;
-}
-
-.center .right .down .rightCtner {
-    margin-right: 5px;
-    width: 50%;
-}
-
-.center .right .down .title {
-    text-align: center;
-    margin: 12px;
-}
-
-.center .right .down .border {
-    border: 3px solid #b7d2ec;
-}
-
-.center .right .down .content {
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 20px;
-    margin-bottom: 13px;
 }
 
 /* 三栏 */
@@ -396,14 +322,7 @@
 
 .bottom .left .zg-report div {
     flex: 1;
-}
-
-.bottom .left .zg-report div {
     line-height: 28px;
-}
-
-.bottom .right .up {
-    display: flex;
 }
 
 .bottom .right .up .leftCtner {
@@ -413,63 +332,9 @@
     margin-right: 16px;
 }
 
-.bottom .right .up .leftCtner span {
-    font-weight: bolder;
-    display: block;
-    color: #ffffff;
-}
-
-.bottom .right .up .rightCtner {
+.bottom .right .up {
     display: flex;
-    border: 3px solid #bed7ef;
-    border-radius: 20px;
-    flex: 1 auto;
-    text-align: center;
-    margin-top: 9px;
-    margin-right: 8px;
 }
-
-.bottom .right .up .rightCtner div {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    flex: 1;
-}
-
-.bottom .right .up .rightCtner div {
-    line-height: 34px;
-}
-
-.bottom .right .down {
-    display: flex;
-    margin-top: 20px;
-}
-
-.bottom .right .down .leftCtner {
-    margin-left: 5px;
-    width: 48%;
-}
-
-.bottom .right .down .rightCtner {
-    margin-right: 5px;
-    width: 50%;
-}
-
-.bottom .right .down .title {
-    text-align: center;
-    margin: 12px;
-}
-
-.bottom .right .down .border {
-    border: 3px solid #b7d2ec;
-}
-
-.bottom .right .down .content {
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 20px;
-    margin-bottom: 13px;
-}
-
 
 /* 四边角 */
 .left .report-border {

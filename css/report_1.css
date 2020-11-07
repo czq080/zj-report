@@ -3,6 +3,21 @@
     src: url("../fonts/5272d216-0000-0000-0000-000000000000.woff") format("woff");
 }
 
+@font-face {
+    font-family: "RHUBAD+FZCuHeiSongS-B-GB";
+    src: url("../fonts/c541d85a-0000-0000-0000-000000000000.woff") format("woff");
+}
+
+@font-face {
+    font-family: "BSKQOF+SimHei";
+    src: url("../fonts/f00fe840-0000-0000-0000-000000000000.woff") format("woff");
+}
+
+@font-face {
+    font-family: "NCIULE+SimSun";
+    src: url("../fonts/3ea65777-0000-0000-0000-000000000000.woff") format("woff");
+}
+
 .top-container {
     display: flex;
     justify-content: space-between;
@@ -45,21 +60,11 @@
     margin-top: 25px;
 }
 
-@font-face {
-    font-family: "RHUBAD+FZCuHeiSongS-B-GB";
-    src: url("../fonts/c541d85a-0000-0000-0000-000000000000.woff") format("woff");
-}
-
 .information-title {
     line-height: 1.21875em;
     font-size: 19px;
     font-family: "RHUBAD+FZCuHeiSongS-B-GB";
     color: #009999;
-}
-
-@font-face {
-    font-family: "BSKQOF+SimHei";
-    src: url("../fonts/f00fe840-0000-0000-0000-000000000000.woff") format("woff");
 }
 
 .information-table-container {
@@ -93,11 +98,6 @@
     margin: 10px;
     border-radius: 13px;
     text-align: center;
-}
-
-@font-face {
-    font-family: "NCIULE+SimSun";
-    src: url("../fonts/3ea65777-0000-0000-0000-000000000000.woff") format("woff");
 }
 
 .foot-type-inner {
