@@ -40,7 +40,7 @@
     border-collapse: collapse;
     width: 100%;
     height: 100%;
-    font-size: 0.75em;
+    font-size: 12px;
     font-family: "VBVQIW+SimSun", "Times New Roman";
     color: #009999;
     line-height: 20px;
@@ -49,7 +49,7 @@
 
 .pod .pod_table td {
     border: 1px solid #ececec;
-    height: 43px;
+    height: 42px;
     padding-left: 6px;
     padding-right: 6px;
 }
