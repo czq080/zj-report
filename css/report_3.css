@@ -32,7 +32,7 @@
 
 .pod .pod_table_container {
     padding: 2px;
-    flex: 1;
+    height: 100%;
 }
 
 .pod .pod_table {
