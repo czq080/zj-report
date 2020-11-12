@@ -3,10 +3,19 @@
     src: url("../fonts/30fde94d-0000-0000-0000-000000000000.woff") format("woff");
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
 .report_three{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 10px;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .pod {

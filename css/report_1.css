@@ -18,6 +18,21 @@
     src: url("../fonts/3ea65777-0000-0000-0000-000000000000.woff") format("woff");
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+.first{
+    position: relative;
+    padding-left: 86px;
+    padding-right: 86px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .top-container {
     display: flex;
     justify-content: space-between;
