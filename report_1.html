@@ -9,11 +9,11 @@
     <div class="first">
         <div class="top-container">
             <div class="title-container">
-                <div class="title">
-                    <div>
-                        <span class="title-span">三维脚型检测报告</span>
-                    </div>
-                </div>
+                <span class="title-span">脚型三维检测报告</span>
+            </div>
+
+            <div class="qrcode-container">
+                <div class="qrcode"></div>
             </div>
 
             <div class="logo-container">
@@ -62,28 +62,31 @@
                     <div class="foot-type-container">
                         <div class="foot-type-inner">
                             <div>
-                                <span class="foot-type-span">脚型类型：</span>
+                                <span class="foot-type-span">脚型类型：&nbsp;</span>
                                 <span class="foot-type-name-span" id="foot_type_value">罗马脚</span>
                             </div>
                             <div class="foot-type-img-container">
                                 <div class="foot-type-img-container-left">
-                                    <img src="./img/foot-1.png" style="width: 97.57px;height: 159.69px;"
+                                    <img src="./img/foot-1.png" style="width: 92.8px;height: 168.43px;"
                                         class="foot-type-img" />
                                 </div>
                                 <div class="foot-type-img-container-right">
                                     <img src="./img/foot-2.png" style="width: 92.8px;height: 168.43px;"
                                         class="foot-type-img" />
                                 </div>
+                                <div><span class="foot-report-font xiema">推荐鞋码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;213</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="foot-type-desc-container">
-                        <span class="foot-type-desc-span" id="foot_desc" style="display: block;">
-                        </span>
-                        <span class="foot-type-desc-span" id="foot_feature" style="display: block;">
-                        </span>
-                        <span class="foot-type-desc-span" id="foot_xk" style="display: block;">
-                        </span>
+                        <div class="foot-type-desc-span-container">
+                            <span class="foot-type-desc-span" id="foot_desc" style="display: block;">
+                            </span>
+                            <span class="foot-type-desc-span" id="foot_feature" style="display: block;">
+                            </span>
+                            <span class="foot-type-desc-span" id="foot_xk" style="display: block;">
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="foot-report">
@@ -91,29 +94,25 @@
                         <div class="foot-report-inner">
                             <span class="foot-report-title-span foot-report-font">脚长</span>
                         </div>
-                        <div style="display: inline-block;text-align: right;">
+                        <div style="display: inline-block; padding-top: 8px;">
                             <div class="foot-report-img-inner">
-                                <img src="./img/foot-3.png" style="width: 118.02px;height: 137.36px"
+                                <img src="./img/foot-3.png" style="width: 118.02px;height: 126px"
                                     class="foot-report-img" />
                             </div>
                             <div class="foot-report-img-desc-container foot-report-font">
                                 <span>266</span> <span>左脚&nbsp;&nbsp;右脚&nbsp;</span><span>265.2</span>
                             </div>
                         </div>
-                        <div style="display: inline-block;">
-                            <span class="xiema foot-report-font" style="margin-bottom: 20px;">推荐鞋码</span>
-                            <span class="xiema foot-report-font">43</span>
-                        </div>
                     </div>
                     <div class="foot-report-one foot-report-container">
                         <div class="foot-report-inner">
                             <span class="foot-report-title-span foot-report-font">脚宽</span>
                         </div>
-                        <div class="foot-report-img-inner">
-                            <img src="./img/foot-4.png" style="width: 142.33px;height: 130.74px"
+                        <div class="foot-report-img-inner" style="padding-top:8px">
+                            <img src="./img/foot-4.png" style="width: 138.33px;height: 126px"
                                 class="foot-report-img" />
                         </div>
-                        <div class="foot-report-img-desc-container foot-report-font" style="margin-top: 18px;">
+                        <div class="foot-report-img-desc-container foot-report-font">
                             <span>266 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 265.2</span>
                         </div>
                     </div>
@@ -123,7 +122,7 @@
                         </div>
                         <div class="foot-report-img-center">
                             <div class="inner">
-                                <img src="./img/foot-5.png" style="width: 155.13px;height: 130px"
+                                <img src="./img/foot-5.png" style="width: 130px;height: 130px"
                                     class="foot-report-img" />
                             </div>
                         </div>
@@ -154,12 +153,12 @@
                         <div class="foot-report-inner">
                             <span class="foot-report-title-span foot-report-font">足弓高</span>
                         </div>
-                        <div class="foot-report-img-inner">
-                            <img src="./img/foot-6.png" style="width: 204.29px;height: 168.09px"
+                        <div class="foot-report-img-inner" style="padding-top:14px">
+                            <img src="./img/foot-6.png" style="width: 170px;height: 130px"
                                 class="foot-report-img" />
                         </div>
                         <div class="foot-report-font zugonggao">
-                            <span>足弓高度&nbsp;&nbsp;&nbsp;&nbsp;</span><span>22</span>
+                            <span>266 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 265.2</span>
                         </div>
                     </div>
                 </div>
@@ -171,7 +170,8 @@
     var footDescArray = new Array();
 
     footDescArray['埃及脚'] = new Array();
-    footDescArray['埃及脚']['desc'] = '的脚型是最普遍的，大脚趾比其他四根脚趾长，大脚趾到小趾依次变短，中国人普遍是这种脚型，该脚型比较适合穿斜头鞋，最好穿特殊型的鞋保护脚趾，同时在美观方面，埃及脚也是最好看的脚型。';
+    footDescArray['埃及脚']['desc'] =
+        '的脚型是最普遍的，大脚趾比其他四根脚趾长，大脚趾到小趾依次变短，中国人普遍是这种脚型，该脚型比较适合穿斜头鞋，最好穿特殊型的鞋保护脚趾，同时在美观方面，埃及脚也是最好看的脚型。';
     footDescArray['埃及脚']['feature'] = '大拇指比其他脚趾长，脚趾呈现一个斜度。';
     footDescArray['埃及脚']['xk'] = '斜头鞋。';
 
@@ -181,13 +181,17 @@
     footDescArray['希腊脚']['xk'] = '尖头鞋、圆尖头鞋。';
 
     footDescArray['罗马脚'] = new Array();
-    footDescArray['罗马脚']['desc'] = '也称为方形脚，这种脚型5根脚趾长度都差不多，没有特别凸出的脚趾，看起来就像正方形一样，"罗马脚"在选鞋时，可以挑选圆头、方头鞋，而拥有"罗马脚"的人较罕见，他们特别适合跳芭蕾舞。';
+    footDescArray['罗马脚']['desc'] =
+        '也称为方形脚，这种脚型5根脚趾长度都差不多，没有特别凸出的脚趾，看起来就像正方形一样，"罗马脚"在选鞋时，可以挑选圆头、方头鞋，而拥有"罗马脚"的人较罕见，他们特别适合跳芭蕾舞。';
     footDescArray['罗马脚']['feature'] = '五根脚趾长度差不多长。';
     footDescArray['罗马脚']['xk'] = '圆头鞋、方头鞋。';
 
     var foot_type_value = document.getElementById("foot_type_value").innerHTML;
-    document.getElementById("foot_desc").innerHTML = '<b>'+ foot_type_value +'</b>' + footDescArray[foot_type_value]['desc'];
+    document.getElementById("foot_desc").innerHTML = '<b>' + foot_type_value + '</b>' + footDescArray[foot_type_value][
+        'desc'
+    ];
     document.getElementById("foot_feature").innerHTML = '<b>脚型特色：</b>' + footDescArray[foot_type_value]['feature'];
     document.getElementById("foot_xk").innerHTML = '<b>建议鞋款：</b>' + footDescArray[foot_type_value]['xk'];
 </script>
+
 </html>

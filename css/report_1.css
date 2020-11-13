@@ -39,27 +39,26 @@ html, body {
 }
 
 .title-container {
-    border: 3px solid #bed7ef;
     border-radius: 20px;
-    background-color: #dfebf7;
     flex: 1 1 auto;
     text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
-
-.title {
-    margin-top: 26px;
-    margin-bottom: 26px;
-}
-
 .title-span {
     font-size: 34px;
-    font-family: "DOWALQ+HYChaoCuYuanJ", "Times New Roman";
     color: #000000;
 }
 
 .logo-container {
     border: 2px solid #e8e8e8;
     width: 208px;
+    margin-left: 4px;
+}
+
+.qrcode-container {
+    border: 2px solid #e8e8e8;
+    width: 80px;
     margin-left: 20px;
 }
 
@@ -106,15 +105,6 @@ html, body {
     border-radius: 18px;
 }
 
-.foot-type-container {
-    width: 216px;
-    height: 216px;
-    border: 1.5px solid #5b9ad5;
-    margin: 10px;
-    border-radius: 13px;
-    text-align: center;
-}
-
 .foot-type-inner {
     margin-top: 6px;
     margin-left: 6px;
@@ -125,6 +115,29 @@ html, body {
 .foot-type {
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.foot-type-container {
+    width: 260px;
+    height: 100%;
+    border: 2px solid  #88b5e0;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.foot-type-desc-container {
+    width: 260px;
+    line-height: 26px;
+}
+
+.foot-type-desc-span-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .foot-type-span {
@@ -144,50 +157,43 @@ html, body {
 }
 
 .foot-type-img-container {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .foot-type-img-container-left {
     width: 50%;
-    float: left;
+    display: inline;
+    margin-right: 30px;
 }
 
 .foot-type-img-container-right {
     width: 50%;
-    float: right;
-}
-
-.foot-type-desc-container {
-    flex: 1;
-    margin-top: 12px;
-    text-indent: 20px;
-    line-height: 20px;
+    display: inline;
 }
 
 .foot-type-desc-span {
-    font-size: 0.75em;
-    font-family: "NCIULE+SimSun";
+    font-size: 14px;
+    /* font-family: "NCIULE+SimSun"; */
     color: #080404;
 }
 
 .foot-report {
-    /* margin-left: 20px; */
-    margin-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 0;
     letter-spacing: -0.3333em;
     text-align: center;
 }
 
 .foot-report-one {
-    width: 245px;
-    height: 206px;
-    border: 1.6px solid #5b9ad5;
-    margin-left: 20px;
-    margin-top: 15px;
-    margin-right: 20px;
+    /* height: 100%; */
+    width: 260px;
+    border: 2px solid #88b5e0;
+    margin-bottom: 10px;
     border-radius: 13px;
-    display: inline;
-    display: inline-block;
 }
 
 .foot-report-container {
@@ -216,7 +222,6 @@ html, body {
 
 .xiema {
     font-size: 13px;
-    display: block;
 }
 
 .foot-report-font {
@@ -271,6 +276,10 @@ html, body {
     display: block;
     font-size: 12px;
     line-height: 2em;
+}
+
+.zugonggao{
+    margin-top:10px
 }
 
 .zugonggao span {
