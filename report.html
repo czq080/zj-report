@@ -10,12 +10,20 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             width: 796px;
             margin: 0 auto;
         }
-        .container div{
+
+        .container div {
             width: 100%;
+        }
+
+        @media print {
+            .page {
+                page-break-after: always;
+            }
         }
     </style>
 </head>
@@ -23,11 +31,11 @@
 <body>
     <div class="container">
         <div><iframe src="./report_1.html" scrolling="no" width="100%" height="1124px" frameborder="0"></iframe></div>
-        <div style="clear: both; "></div>
+        <div class="page" style="clear: both; "></div>
         <div><iframe src="./report_2.html" scrolling="no" width="100%" height="1124px" frameborder="0"></iframe></div>
-        <div style="clear: both; "></div>
+        <div class="page" style="clear: both; "></div>
         <div><iframe src="./report_3.html" scrolling="no" width="100%" height="1124px" frameborder="0"></iframe></div>
-        <div style="clear: both; "></div>
+        <div class="page" style="clear: both; "></div>
     </div>
 </body>
 
