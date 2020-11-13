@@ -34,10 +34,10 @@
                         <td>编号</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id='1'></td>
+                        <td id='2'></td>
+                        <td id='3'></td>
+                        <td id='4'></td>
                     </tr>
                     <tr>
                         <td>身高</td>
@@ -46,10 +46,10 @@
                         <td>日期</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id='5'></td>
+                        <td id='6'></td>
+                        <td id='7'></td>
+                        <td id='8'></td>
                     </tr>
                 </table>
             </div>
@@ -64,18 +64,18 @@
                         <div class="foot-type-inner">
                             <div>
                                 <span class="foot-type-span">脚型类型：&nbsp;</span>
-                                <span class="foot-type-name-span" id="foot_type_value">罗马脚</span>
+                                <span class="foot-type-name-span" id="foot_type_value"></span>
                             </div>
                             <div class="foot-type-img-container">
                                 <div class="foot-type-img-container-left">
-                                    <img src="./img/foot-1.png" style="width: 92.8px;height: 168.43px;"
+                                    <img src="./Resource_Pictures/0.jpg" style="width: 120px;height: 168.43px;"
                                         class="foot-type-img" />
                                 </div>
                                 <div class="foot-type-img-container-right">
-                                    <img src="./img/foot-2.png" style="width: 92.8px;height: 168.43px;"
+                                    <img src="./Resource_Pictures/1.jpg" style="width: 120px;height: 168.43px;"
                                         class="foot-type-img" />
                                 </div>
-                                <div><span class="foot-report-font xiema">推荐鞋码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;213</span></div>
+                                <div><span class="foot-report-font xiema">推荐鞋码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="70"></span></span></div>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                                     class="foot-report-img" />
                             </div>
                             <div class="foot-report-img-desc-container foot-report-font">
-                                <span>266</span> <span>左脚&nbsp;&nbsp;右脚&nbsp;</span><span>265.2</span>
+                                <span id="23-1"></span> <span>左脚&nbsp;&nbsp;右脚&nbsp;</span><span id='23-2'></span>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                                 class="foot-report-img" />
                         </div>
                         <div class="foot-report-img-desc-container foot-report-font">
-                            <span>266 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 265.2</span>
+                            <span><span id='37-1'></span> 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 <span id='37-2'></span></span>
                         </div>
                     </div>
                     <div class="foot-report-one foot-report-container">
@@ -131,22 +131,22 @@
                             <div class="inner">
                                 <div>左脚</div>
                                 <span>兜跟围</span>
-                                <span>329</span>
+                                <span id="66-1"></span>
                                 <span>跗围</span>
-                                <span>256</span>
+                                <span id="64-1"></span>
                                 <span>跖围</span>
-                                <span>228</span>
+                                <span id="63-1"></span>
                             </div>
                         </div>
                         <div class="foot-report-font foot-report-img-right">
                             <div class="inner">
                                 <div>右脚</div>
                                 <span>兜跟围</span>
-                                <span>329</span>
+                                <span id="66-2"></span>
                                 <span>跗围</span>
-                                <span>256</span>
+                                <span id="64-2"></span>
                                 <span>跖围</span>
-                                <span>228</span>
+                                <span id="63-2"></span>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                                 class="foot-report-img" />
                         </div>
                         <div class="foot-report-font zugonggao">
-                            <span>266 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 265.2</span>
+                            <span><span id="72-1"></span> 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 <span id="72-2"></span></span>
                         </div>
                     </div>
                 </div>
@@ -168,6 +168,39 @@
     </div>
 </body>
 <script>
+
+    function load(name) {
+        let xhr = new XMLHttpRequest(),
+            okStatus = document.location.protocol === "file:" ? 0 : 200;
+        xhr.open('GET', name, false);
+        xhr.overrideMimeType("text/html;charset=utf-8");
+        xhr.send(null);
+        return xhr.responseText;
+    }
+    
+    let text = load("dataArray.csv").split('||');
+    var dataArray = new Array();
+    for(j = 0,len=text.length; j < len; j++) {
+        dataArray[j] = text[j].split(',')
+    }
+    console.log(dataArray)
+    document.getElementById("1").innerHTML = dataArray[0][2]
+    document.getElementById("2").innerHTML = dataArray[0][3]
+    document.getElementById("foot_type_value").innerHTML = dataArray[87][2];
+    document.getElementById("70").innerHTML = dataArray[69][2];
+    document.getElementById("23-1").innerHTML = dataArray[22][2];
+    document.getElementById("23-2").innerHTML = dataArray[22][3];
+    document.getElementById("37-1").innerHTML = dataArray[36][2];
+    document.getElementById("37-2").innerHTML = dataArray[36][3];
+    document.getElementById("66-1").innerHTML = dataArray[65][2];
+    document.getElementById("66-2").innerHTML = dataArray[65][3];
+    document.getElementById("64-1").innerHTML = dataArray[63][2];
+    document.getElementById("64-2").innerHTML = dataArray[63][3];
+    document.getElementById("63-1").innerHTML = dataArray[62][2];
+    document.getElementById("63-2").innerHTML = dataArray[62][3];
+    document.getElementById("72-1").innerHTML = dataArray[71][2];
+    document.getElementById("72-2").innerHTML = dataArray[71][3];
+
     var footDescArray = new Array();
 
     footDescArray['埃及脚'] = new Array();
@@ -188,9 +221,7 @@
     footDescArray['罗马脚']['xk'] = '圆头鞋、方头鞋。';
 
     var foot_type_value = document.getElementById("foot_type_value").innerHTML;
-    document.getElementById("foot_desc").innerHTML = '<b>' + foot_type_value + '</b>' + footDescArray[foot_type_value][
-        'desc'
-    ];
+    document.getElementById("foot_desc").innerHTML = '<b>' + foot_type_value + '</b>' + footDescArray[foot_type_value]['desc'];
     document.getElementById("foot_feature").innerHTML = '<b>脚型特色：</b>' + footDescArray[foot_type_value]['feature'];
     document.getElementById("foot_xk").innerHTML = '<b>建议鞋款：</b>' + footDescArray[foot_type_value]['xk'];
 </script>
