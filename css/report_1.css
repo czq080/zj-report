@@ -53,17 +53,15 @@ html, body {
 .logo-container {
     border: 2px solid #e8e8e8;
     width: 208px;
+    height: 90px;
     margin-left: 4px;
 }
 
 .qrcode-container {
     border: 2px solid #e8e8e8;
-    width: 80px;
+    width: 90px;
+    height: 90px;
     margin-left: 20px;
-}
-
-.logo {
-
 }
 
 .information-title-container {
@@ -158,16 +156,22 @@ html, body {
 
 .foot-type-img-container {
     margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 168px;
 }
 
 .foot-type-img-container-left {
-    width: 50%;
-    display: inline;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 .foot-type-img-container-right {
-    width: 50%;
-    display: inline;
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 
 .foot-type-desc-span {
