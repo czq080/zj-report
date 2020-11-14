@@ -84,7 +84,7 @@ html, body {
 
 .right .font2 {
     font-size: 0.88em;
-    font-family: "QMONEI+SimSun";
+    /* font-family: "QMONEI+SimSun"; */
     color: #000000;
 }
 
@@ -96,7 +96,7 @@ html, body {
 
 .right .font4 {
     font-size: 1em;
-    font-family: "AQBFQD+Calibri";
+    /* font-family: "AQBFQD+Calibri"; */
     color: #000000;
 }
 

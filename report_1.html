@@ -6,7 +6,9 @@
 </head>
 
 <body style="width: 796px;height: 1124px;margin: 0px">
-    <div style="width:80%;margin:0 auto;font-size:16px;border-bottom:1px solid #ddd;padding-bottom:10px;display: flex; justify-content: space-between;"><span>PodoMagic 三维脚型扫描&检测</span></div>
+    <div
+        style="width:80%;margin:0 auto;font-size:16px;border-bottom:1px solid #ddd;padding-bottom:10px;display: flex; justify-content: space-between;">
+        <span>PodoMagic 三维脚型扫描&检测</span></div>
     <div class="first">
         <div class="top-container">
             <div class="title-container">
@@ -34,10 +36,10 @@
                         <td>编号</td>
                     </tr>
                     <tr>
-                        <td id='1'></td>
-                        <td id='2'></td>
-                        <td id='3'></td>
-                        <td id='4'></td>
+                        <td id='A2'></td>
+                        <td id='A3'></td>
+                        <td id='A4'></td>
+                        <td id='A5'></td>
                     </tr>
                     <tr>
                         <td>身高</td>
@@ -46,10 +48,10 @@
                         <td>日期</td>
                     </tr>
                     <tr>
-                        <td id='5'></td>
-                        <td id='6'></td>
-                        <td id='7'></td>
-                        <td id='8'></td>
+                        <td id='A6'></td>
+                        <td id='A7'></td>
+                        <td id='A8'></td>
+                        <td id='A9'></td>
                     </tr>
                 </table>
             </div>
@@ -75,7 +77,9 @@
                                     <img src="./Resource_Pictures/1.jpg" style="width: 120px;height: 168.43px;"
                                         class="foot-type-img" />
                                 </div>
-                                <div><span class="foot-report-font xiema">推荐鞋码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="70"></span></span></div>
+                                <div><span
+                                        class="foot-report-font xiema">推荐鞋码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            id="110"></span></span></div>
                             </div>
                         </div>
                     </div>
@@ -101,7 +105,7 @@
                                     class="foot-report-img" />
                             </div>
                             <div class="foot-report-img-desc-container foot-report-font">
-                                <span id="23-1"></span> <span>左脚&nbsp;&nbsp;右脚&nbsp;</span><span id='23-2'></span>
+                                <span id="58-1"></span> <span>左脚&nbsp;&nbsp;右脚&nbsp;</span><span id='58-2'></span>
                             </div>
                         </div>
                     </div>
@@ -110,11 +114,11 @@
                             <span class="foot-report-title-span foot-report-font">脚宽</span>
                         </div>
                         <div class="foot-report-img-inner" style="padding-top:8px">
-                            <img src="./img/foot-4.png" style="width: 138.33px;height: 126px"
-                                class="foot-report-img" />
+                            <img src="./img/foot-4.png" style="width: 138.33px;height: 126px" class="foot-report-img" />
                         </div>
                         <div class="foot-report-img-desc-container foot-report-font">
-                            <span><span id='37-1'></span> 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 <span id='37-2'></span></span>
+                            <span><span id='73-1'></span> 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 <span
+                                    id='73-2'></span></span>
                         </div>
                     </div>
                     <div class="foot-report-one foot-report-container">
@@ -131,22 +135,22 @@
                             <div class="inner">
                                 <div>左脚</div>
                                 <span>兜跟围</span>
-                                <span id="66-1"></span>
+                                <span id="105-1"></span>
                                 <span>跗围</span>
-                                <span id="64-1"></span>
+                                <span id="103-1"></span>
                                 <span>跖围</span>
-                                <span id="63-1"></span>
+                                <span id="102-1"></span>
                             </div>
                         </div>
                         <div class="foot-report-font foot-report-img-right">
                             <div class="inner">
                                 <div>右脚</div>
                                 <span>兜跟围</span>
-                                <span id="66-2"></span>
+                                <span id="105-2"></span>
                                 <span>跗围</span>
-                                <span id="64-2"></span>
+                                <span id="103-2"></span>
                                 <span>跖围</span>
-                                <span id="63-2"></span>
+                                <span id="102-2"></span>
                             </div>
                         </div>
                     </div>
@@ -155,11 +159,11 @@
                             <span class="foot-report-title-span foot-report-font">足弓高</span>
                         </div>
                         <div class="foot-report-img-inner" style="padding-top:14px">
-                            <img src="./img/foot-6.png" style="width: 170px;height: 130px"
-                                class="foot-report-img" />
+                            <img src="./img/foot-6.png" style="width: 170px;height: 130px" class="foot-report-img" />
                         </div>
                         <div class="foot-report-font zugonggao">
-                            <span><span id="72-1"></span> 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 <span id="72-2"></span></span>
+                            <span><span id="113-1"></span> 左脚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右脚 <span
+                                    id="113-2"></span></span>
                         </div>
                     </div>
                 </div>
@@ -167,39 +171,27 @@
         </div>
     </div>
 </body>
+<script text="text/javascript" src="js/common.js"></script>
 <script>
-
-    function load(name) {
-        let xhr = new XMLHttpRequest(),
-            okStatus = document.location.protocol === "file:" ? 0 : 200;
-        xhr.open('GET', name, false);
-        xhr.overrideMimeType("text/html;charset=utf-8");
-        xhr.send(null);
-        return xhr.responseText;
-    }
-    
-    let text = load("dataArray.csv").split('||');
+    let text = fc.load("./dataArray.csv").split('\n');
     var dataArray = new Array();
-    for(j = 0,len=text.length; j < len; j++) {
+    for (j = 0, len = text.length; j < len; j++) {
         dataArray[j] = text[j].split(',')
     }
-    console.log(dataArray)
-    document.getElementById("1").innerHTML = dataArray[0][2]
-    document.getElementById("2").innerHTML = dataArray[0][3]
-    document.getElementById("foot_type_value").innerHTML = dataArray[87][2];
-    document.getElementById("70").innerHTML = dataArray[69][2];
-    document.getElementById("23-1").innerHTML = dataArray[22][2];
-    document.getElementById("23-2").innerHTML = dataArray[22][3];
-    document.getElementById("37-1").innerHTML = dataArray[36][2];
-    document.getElementById("37-2").innerHTML = dataArray[36][3];
-    document.getElementById("66-1").innerHTML = dataArray[65][2];
-    document.getElementById("66-2").innerHTML = dataArray[65][3];
-    document.getElementById("64-1").innerHTML = dataArray[63][2];
-    document.getElementById("64-2").innerHTML = dataArray[63][3];
-    document.getElementById("63-1").innerHTML = dataArray[62][2];
-    document.getElementById("63-2").innerHTML = dataArray[62][3];
-    document.getElementById("72-1").innerHTML = dataArray[71][2];
-    document.getElementById("72-2").innerHTML = dataArray[71][3];
+    document.getElementById("foot_type_value").innerHTML = dataArray[134][1];
+    document.getElementById("110").innerHTML = dataArray[109][1];
+    document.getElementById("58-1").innerHTML = dataArray[57][1];
+    document.getElementById("58-2").innerHTML = dataArray[57][2];
+    document.getElementById("73-1").innerHTML = dataArray[72][1];
+    document.getElementById("73-2").innerHTML = dataArray[72][2];
+    document.getElementById("105-1").innerHTML = dataArray[104][1];
+    document.getElementById("105-2").innerHTML = dataArray[104][2];
+    document.getElementById("103-1").innerHTML = dataArray[102][1];
+    document.getElementById("103-2").innerHTML = dataArray[102][2];
+    document.getElementById("102-1").innerHTML = dataArray[101][1];
+    document.getElementById("102-2").innerHTML = dataArray[101][2];
+    document.getElementById("113-1").innerHTML = dataArray[112][1];
+    document.getElementById("113-2").innerHTML = dataArray[112][2];
 
     var footDescArray = new Array();
 
