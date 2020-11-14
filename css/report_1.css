@@ -164,13 +164,13 @@ html, body {
 
 .foot-type-img-container-left {
     position: absolute;
-    left: 0px;
+    left: -10px;
     top: 0px;
 }
 
 .foot-type-img-container-right {
     position: absolute;
-    right: 0px;
+    right: -10px;
     top: 0px;
 }
 
