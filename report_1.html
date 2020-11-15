@@ -182,13 +182,14 @@
     for (j = 0, len = text.length; j < len; j++) {
         dataArray[j] = text[j].split(',')
     }
-    var info = dataArray[0].split(' ');
+    var info = dataArray[0][0].split(' ');
     document.getElementById("A2").innerHTML = info[1];
     document.getElementById("A3").innerHTML = info[2];
-    document.getElementById("A6").innerHTML = dataArray[19][1];
-    document.getElementById("A7").innerHTML = dataArray[21][1];
-    document.getElementById("A8").innerHTML = dataArray[17][1];
-    document.getElementById("A9").innerHTML = dataArray[15][1];
+    document.getElementById("A5").innerHTML = info[0];
+    document.getElementById("A6").innerHTML = dataArray[18][1];
+    document.getElementById("A7").innerHTML = dataArray[20][1];
+    document.getElementById("A8").innerHTML = dataArray[16][1];
+    document.getElementById("A9").innerHTML = dataArray[14][1];
 
 
     document.getElementById("foot_type_value").innerHTML = dataArray[134][1];
